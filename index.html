@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Ball Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>AIR BALL GAME</h1>
+        
+        <!-- Main Menu -->
+        <div id="main-menu">
+            <h2>Welcome To Air Ball Game!</h2>
+            <button id="start-button">Start Game</button>
+        </div>
+
+        <!-- Game Instructions Section -->
+        <div id="instructions" class="hidden">
+            <p>Tap on the water drops to collect them! Avoid polluted drops.</p>
+            <button id="start-game-button">Start Game</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="hidden">
+            <canvas id="gameCanvas" width="320" height="480"></canvas>
+            <div id="score-board">
+                <p>Score: <span id="score">0</span></p>
+                <p id="timer">Time Remaining: 60s</p>
+                <button id="end-button">End Game</button>
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over" class="hidden">
+            <h2>Game Over</h2>
+            <p>Your final score: <span id="final-score">0</span></p>
+            <button id="retry-button">Retry</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
